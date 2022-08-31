@@ -91,17 +91,6 @@ public class AuthorSol {
 	
 	static final Random rnd = new Random();
 	
-	static void shuffleSort(char[] a) { //change this
-		int n = a.length;
-		for (int i = 0; i < n; i++) {
-			int newIndex = rnd.nextInt(n);
-			char temp = a[newIndex]; //change this
-			a[newIndex] = a[i];
-			a[i] = temp;
-		}
-		Arrays.sort(a);
-	}
-	
 	static void shuffleSort(int[] a) { //change this
 		int n = a.length;
 		for (int i = 0; i < n; i++) {
